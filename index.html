@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --fg: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a19;
+        --fg: #f0efec;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 10vw, 5rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+  </style>
+</head>
+<body>
+  <h1>hello, world</h1>
+</body>
+</html>
